@@ -3,6 +3,6 @@ plugins {
 }
 
 allprojects{
-    group = "io.heartpattern.gradle-code-generator"
-    version = "1.0.2"
+    group = "com.github.knk190001.gradle-code-generator"
+    version = "1.0.3"
 }

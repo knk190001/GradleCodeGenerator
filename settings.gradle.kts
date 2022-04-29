@@ -14,12 +14,6 @@ include(
     "plugin-kotlin"
 )
 
-// Examples
-include(
-    "example-java",
-    "example-kotlin"
-)
-
 rootProject.children.forEach{subProject->
     subProject.buildFileName = "${subProject.name}.gradle.kts"
     subProject.projectDir = file(subProject.name.replace('-','/'))

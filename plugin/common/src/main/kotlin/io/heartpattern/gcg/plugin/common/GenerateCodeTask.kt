@@ -33,10 +33,12 @@ abstract class GenerateCodeTask : DefaultTask() {
     val outputDir: File
         get() = File(project.projectDir, generatedSourceSetDir.format(targetSourceSetName.get()))
 
+    @get:Internal
     val generatingSourceSet by lazy {
         project.extensions.getByType<SourceSetContainer>().getByName(generatingSourceSetName.get())
     }
 
+    @get:Internal
     val targetSourceSet by lazy {
         project.extensions.getByType<SourceSetContainer>().getByName(targetSourceSetName.get())
     }
