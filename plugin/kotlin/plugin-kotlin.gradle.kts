@@ -19,15 +19,15 @@ kotlinDslPluginOptions{
 }
 
 pluginBundle{
-    website = "https://github.com/HeartPattern/GradleCodeGenerator"
-    vcsUrl = "https://github.com/HeartPattern/GradleCodeGenerator"
+    website = "https://github.com/knk190001/GradleCodeGenerator"
+    vcsUrl = "https://github.com/knk190001/GradleCodeGenerator"
     tags = listOf("generator")
 }
 
 gradlePlugin{
     plugins{
         create("gradle-code-generator"){
-            id = "io.heartpattern.gradle-code-generator-kotlin"
+            id = "com.github.knk190001.gradle-code-generator-kotlin"
             displayName = "Gradle kotlin code generator plugin"
             description = "Gradle plugin for auto-generating kotlin code"
             implementationClass = "io.heartpattern.gcg.plugin.kotlin.GradleCodeGeneratorKotlinPlugin"
