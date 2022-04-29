@@ -27,7 +27,7 @@ class GradleCodeGeneratorCommonPlugin : Plugin<Project> {
         val generatorImplementation = target.configurations.create("generatorImplementation")
         target.dependencies.add(
             generatorImplementation.name,
-            "io.heartpattern.gradle-code-generator:api-common:$apiVersion"
+            "com.github.knk190001.gradle-code-generator:api-common:$apiVersion"
         )
 
         sourceSets.all {
