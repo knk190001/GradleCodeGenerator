@@ -15,6 +15,6 @@ class GradleCodeGeneratorJavaPlugin : Plugin<Project> {
             this@all.dependsOn(generatingSourceSet.classesTaskName)
         }
 
-        target.dependencies.add("generatorImplementation", "com.github.knk190001.gradle-code-generator:api-java:$apiVersion")
+        target.dependencies.add("generatorImplementation", "com.github.knk190001.GradleCodeGenerator:api-java:$apiVersion")
     }
 }
