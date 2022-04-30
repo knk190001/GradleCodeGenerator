@@ -4,5 +4,5 @@ plugins {
 
 allprojects{
     group = "com.github.knk190001.gradle-code-generator"
-    version = "1.0.3"
+    version = "1.0.4"
 }

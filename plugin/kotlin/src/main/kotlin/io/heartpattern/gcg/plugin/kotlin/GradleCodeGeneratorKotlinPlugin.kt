@@ -24,7 +24,7 @@ class GradleCodeGeneratorKotlinPlugin : Plugin<Project> {
 
         target.dependencies.add(
             "generatorImplementation",
-            "io.heartpattern.gradle-code-generator:api-kotlin:$apiVersion"
+            "com.github.knk190001.gradle-code-generator:api-kotlin:$apiVersion"
         )
     }
 }
