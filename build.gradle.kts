@@ -1,8 +1,8 @@
 plugins {
-    kotlin("jvm") version "1.4.20" apply false
+    kotlin("jvm") version "1.8.10" apply false
 }
 
 allprojects{
     group = "com.github.knk190001.gradle-code-generator"
-    version = "1.0.5"
+    version = "1.1.0"
 }
