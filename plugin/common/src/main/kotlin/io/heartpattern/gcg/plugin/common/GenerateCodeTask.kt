@@ -92,7 +92,13 @@ abstract class GenerateCodeTask : DefaultTask() {
             throw GradleException("Exception thrown while generating code from ${type.jvmName}", e)
         }
 
-        result.forEach { code ->
+        val pathHashSet = HashSet<String>()
+        result.forEach {
+            if (!pathHashSet.add("${it.packageName}.${it.fileName}"))
+                throw GradleException("Duplicated file: ${it.packageName}.${it.fileName}")
+        }
+
+        result.parallelStream().forEach { code ->
             val targetFile = File(
                 outputDir,
                 "${code.packageName.replace('.', File.separatorChar)}${File.separatorChar}${code.fileName}"
